@@ -1,0 +1,9 @@
+zone "nutanix.local" {
+	type master;
+	file "/etc/named/zones/db.nutanix.local";
+};
+
+zone "28.21.10.in-addr.arpa" {
+	type master;
+	file "/etc/named/zones/db.28.21.10";
+};

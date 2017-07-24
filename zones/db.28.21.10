@@ -1,0 +1,18 @@
+@      IN      SOA        dnsprod1.nutanix.local. admin.nutanix.local. (
+                              5                ; Serial
+                         604800                ; Refresh
+                          86400                ; Retry
+                        2419200                ; Expire
+                         604800 )              ; Negative Cache TTL
+
+; name servers - NS records
+       IN      NS      dnsprod1.nutanix.local.
+
+; PTR Records
+37    IN    PTR    cluster.nutanix.local.    ;10.21.28.37
+29    IN    PTR    cvm1.nutanix.local.    ;10.21.28.29
+30    IN    PTR    cvm2.nutanix.local.    ;10.21.28.30
+31    IN    PTR    cvm3.nutanix.local.    ;10.21.28.31
+32    IN    PTR    cvm4.nutanix.local.    ;10.21.28.32
+80    IN    PTR    dnsprod1.nutanix.local.    ;10.21.28.80
+81    IN    PTR    saltmaster.nutanix.local.    ;10.21.28.81
